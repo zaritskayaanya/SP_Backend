@@ -2,23 +2,31 @@
   "name": "sp_backend",
   "version": "1.0.0",
   "description": "REST API service for library system: manage users, books, and borrow/return operations",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zaritskayaanya/SP_Backend.git"
   },
-  "keywords": [
-    "backend",
-    "api",
-    "library"
-  ],
   "author": "Анна Милованова <zaritskayaanya@yandex.ru>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zaritskayaanya/SP_Backend/issues"
   },
-  "homepage": "https://github.com/zaritskayaanya/SP_Backend#readme"
+  "homepage": "https://github.com/zaritskayaanya/SP_Backend#readme",
+  "type": "commonjs",
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "cors": "2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
 }
